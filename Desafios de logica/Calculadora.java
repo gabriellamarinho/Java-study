@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//metodo com entrada de dois numeros  
 public class Calculadora {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -42,7 +42,11 @@ public class Calculadora {
                     System.out.println("Erro: divisão por zero não é permitida.");
                 }
                 break;
-                
+                case "raiz":
+                double resultadoraiz1=Math.sqrt(numero1);
+                double resultadoraiz2=Math.sqrt(numero2);
+                System.out.printf("a raiz dos numeros %.2f e de %.2f é igual a %.2f e %.2f",numero1,numero2,resultadoraiz1,resultadoraiz2);
+                break;
             default:
                 System.out.println("Operação inválida. Tente novamente com: soma, subtração, multiplicação ou divisão.");
                 break;
