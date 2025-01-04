@@ -78,3 +78,5 @@ public class Endereco {
     public String toString(){
         return rua +"rua 2 "+ bairro+ "santo antonio"+ cidade+"Paulista"+ uf+"PE"," 55817-987"+"rua da padaria" + 98;
 }
+}
+

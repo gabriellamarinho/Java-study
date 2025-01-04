@@ -20,6 +20,9 @@ public class Paciente {
         this.alergia = alergia;
         this.tipoSanguineo = tipoSanguineo;
     }
+    void status(){
+        System.out.printf("Codigo: %s\nNome paciente: %s\n Idade paciente :%d\n Data nascimento %d\n Sexo paciente :%d\n Plano de saúde"+this.codigo+this.nomePaciente+this.idadePaciente+this.dataNascimento+this.sexo+this.planoSaude+this.alergia+this.tipoSanguineo);
+    }
 
     public int getCodigo() {
         return codigo;
@@ -84,4 +87,5 @@ public class Paciente {
     public void setTipoSanguineo(String tipoSanguineo) {
         this.tipoSanguineo = tipoSanguineo;
     }
+    
 }
