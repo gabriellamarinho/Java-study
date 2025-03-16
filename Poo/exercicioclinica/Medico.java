@@ -1,19 +1,22 @@
-package Poo;
+package Poo.exercicioclinica;
 
 public class Medico {
     private int codigoMedico;
     private String nomeMedico;
     private String sexoMedico;
     private String especialidade;
-    private String endereco;
+    private Endereco endereco;
     
-    public Medico(int codigoMedico, String nomeMedico, String sexoMedico, String especialidade, String Endereco){
+    public Medico(int codigoMedico, String nomeMedico, String sexoMedico, String especialidade, Endereco endereco){
         this.codigoMedico=codigoMedico;
         this.nomeMedico=nomeMedico;
         this.sexoMedico=sexoMedico;
         this.especialidade=especialidade;
         this.endereco=endereco;
     }
+
+    //getters and setters
+
     public int gatCodigoMedico(){
         return codigoMedico;
     }
@@ -46,14 +49,16 @@ public class Medico {
     public void setEspecialidade(String especialidade){
         this.especialidade=especialidade;
     }
-    public String getEndereco(){
+    public Endereco getEndereco(){
         return endereco;
 
     }
-    public void setEndereco(String endereco){
+    public void setEndereco(Endereco endereco){
         this.endereco=endereco;
 
     }
+
+    //to string
     public String toString() {
     return "Código: " + codigoMedico + ", Nome: " + nomeMedico + ", Sexo: " + sexoMedico + 
                ", Especialidade: " + especialidade + ", Endereço: [" + endereco + "]";

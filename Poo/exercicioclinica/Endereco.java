@@ -1,4 +1,4 @@
-package Poo;
+package Poo.exercicioclinica;
 
 public class Endereco {
     private String rua ;
@@ -19,6 +19,9 @@ public class Endereco {
         this.numero=numero;
 
     }
+
+    //getters e setters
+
     public String getRua(){
         return rua;
     }
@@ -74,9 +77,10 @@ public class Endereco {
     public void setNumero(int numero ){
         this.numero=numero;
     }
-    @Override
+
+
     public String toString(){
-        return rua +"rua 2 "+ bairro+ "santo antonio"+ cidade+"Paulista"+ uf+"PE"," 55817-987"+"rua da padaria" + 98;
+        return rua +"rua 2 "+ bairro+ "santo antonio"+ cidade+"Paulista"+ uf+"PE"+" 55817-987"+"rua da padaria" + 98;
 }
 }
 
